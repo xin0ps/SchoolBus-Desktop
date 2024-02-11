@@ -10,7 +10,8 @@ namespace Model.Concretes
     {
         public int ParentId { get; set; }
         public int StudentId { get; set; }
-        public virtual Parent Parent { get; } = null!;
-        public virtual Student Student { get; } = null!;
-    }
+
+        //-----------------------------------------------------------//
+        public virtual Parent? Parent { get; } 
+        public virtual Student? Student { get; }
 }

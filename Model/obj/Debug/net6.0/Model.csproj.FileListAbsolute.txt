@@ -20,3 +20,4 @@ C:\Users\ROG\Desktop\SchoolBusApp\Model\obj\Debug\net6.0\Model.dll
 C:\Users\ROG\Desktop\SchoolBusApp\Model\obj\Debug\net6.0\refint\Model.dll
 C:\Users\ROG\Desktop\SchoolBusApp\Model\obj\Debug\net6.0\Model.pdb
 C:\Users\ROG\Desktop\SchoolBusApp\Model\obj\Debug\net6.0\ref\Model.dll
+C:\Users\ROG\Desktop\SchoolBusApp\Model\obj\Debug\net6.0\Model.sourcelink.json

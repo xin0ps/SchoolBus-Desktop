@@ -16,6 +16,21 @@ namespace SchoolBusAppWpf.ViewModels
 {
     public class DriverViewModel : NotificationService
     {
+
+
+        private string _search;
+
+        public string Search
+        {
+            get { return _search; }
+            set
+            {
+                _search = value;
+                OnPropertyChanged();
+              //  SearchMethod();
+            }
+        }
+
         private Driver _selectedItem;
 
         public Driver SelectedItem

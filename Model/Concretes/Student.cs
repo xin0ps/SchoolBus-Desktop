@@ -15,7 +15,8 @@ namespace Model.Concretes
         public string Address1 { get; set; }
         public string? Address2 { get; set; }
 
-        //Navigation Property
+        //-----------------------------------------------------------//
+
         public virtual Class? Class { get; set; }
       
         public virtual ICollection<StudentRide>? StudentRides { get; set; }

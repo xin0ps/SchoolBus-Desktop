@@ -16,6 +16,21 @@ namespace SchoolBusAppWpf.ViewModels
 {
    public class ClassViewModel: NotificationService
     {
+
+
+        private string _search;
+
+        public string Search
+        {
+            get { return _search; }
+            set
+            {
+                _search = value;
+                OnPropertyChanged();
+               // SearchMethod();
+            }
+        }
+
         private Class _selectedItem;
 
         public Class SelectedItem

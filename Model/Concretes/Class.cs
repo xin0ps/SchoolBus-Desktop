@@ -11,7 +11,7 @@ namespace Model.Concretes
     {
         public string Name { get; set; }
 
-        //Navigation Properties
+ //-----------------------------------------------------------//
         public virtual ICollection<Student>? Students { get; set; }
     }
 }

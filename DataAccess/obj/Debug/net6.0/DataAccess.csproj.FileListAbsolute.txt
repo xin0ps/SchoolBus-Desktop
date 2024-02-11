@@ -32,3 +32,4 @@ C:\Users\ROG\Desktop\SchoolBusApp\DataAccess\obj\Debug\net6.0\refint\DataAccess.
 C:\Users\ROG\Desktop\SchoolBusApp\DataAccess\obj\Debug\net6.0\DataAccess.pdb
 C:\Users\ROG\Desktop\SchoolBusApp\DataAccess\obj\Debug\net6.0\DataAccess.genruntimeconfig.cache
 C:\Users\ROG\Desktop\SchoolBusApp\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
+C:\Users\ROG\Desktop\SchoolBusApp\DataAccess\obj\Debug\net6.0\DataAccess.sourcelink.json

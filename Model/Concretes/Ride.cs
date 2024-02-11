@@ -16,10 +16,10 @@ namespace Model.Concretes
         public DateTime? StartTime { get; set; }
         public DateTime? EndTime { get; set; }
 
-        //Navigation Property
+        //-----------------------------------------------------------//
         public virtual Car Car { get; set; }
         public virtual Driver Driver { get; set; }
        
-        public virtual ICollection<StudentRide>? StudentRides { get; set; } = new List<StudentRide>();
+        public virtual ICollection<StudentRide>? StudentRides { get; set; } 
     }
 }
