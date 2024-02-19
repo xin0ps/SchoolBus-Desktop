@@ -4,11 +4,158 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:SchoolBusAppWpf.Views.Pages"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="CreateRideView">
 
-    <Grid>
-        
+    <Grid Background="AliceBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <StackPanel Margin="10">
+            <Label  Content="Ride" FontSize="24" FontWeight="Bold" />
+            <Label Name="fullnamelbl" FontSize="20" Content="Fullname:"/>
+            <Label Name="carnamelbl"   FontSize="20" Content="Car Name:"/>
+            <Label Name="carnumberlbl" FontSize="20"  Content="Car Number:"/>
+            <Label Name="Studentsattendlbl" FontSize="20"  Content="Student Attend:"/>
+            <Label Name="maxseatslbl"  FontSize="20" Content="Max Seats:"/>
+                <ComboBox  SelectedItem="{Binding SelectedRide, UpdateSourceTrigger=PropertyChanged }" SelectionChanged="Selected1" Name="ridescmb" ItemsSource="{Binding Rides}">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="{Binding StartTime}"/>
+                                <TextBlock Text=" - "/>
+                                <TextBlock Text="{Binding EndTime}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+
+
+
+
+
+
+
+            </StackPanel>
+        </Grid>
+
+
+   
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+
+            <DataGrid Grid.Row="0"
+                  Margin="5"
+                  AutoGenerateColumns="False"
+                  ItemsSource="{Binding AllStudents, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                  SelectedItem="{Binding SelectedItem, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                  CanUserDeleteRows="True">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Id" Binding="{Binding Id}"/>
+                    <DataGridTextColumn Header="Firstname" Binding="{Binding FirstName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
+                    <DataGridTextColumn Header="Lastname" Binding="{Binding LastName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
+                    <DataGridTextColumn Header="Class" Binding="{Binding Class.Name, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
+                    <DataGridTemplateColumn Header="Parents" Width="100">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <ComboBox BorderBrush="Orange" Grid.Column="0"
+                                          DisplayMemberPath="Parent.FirstName"
+                                        SelectedIndex="0"
+                                        Width="120"
+                                        ItemsSource="{Binding ParentStudents}"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                  
+                    <DataGridTemplateColumn Header="Add">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Grid Width="100" Height="30">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Button Grid.Column="0" Click="AddClick"
+                                        Margin="2"
+                                        Height="25"
+                                        Width="25"
+                                        Padding="-3"
+                                        Background="#97a97c"
+                                        BorderBrush="#97a97c"
+                                        Command="{Binding Path=DataContext.UpdateStudent, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
+                                        Content="{materialDesign:PackIcon Kind=Add}"
+                                        Style="{StaticResource MaterialDesignRaisedDarkButton}"/>
+                                </Grid>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+
+
+            <DataGrid Grid.Row="1"
+          Margin="5"
+          AutoGenerateColumns="False"
+          ItemsSource="{Binding InRideStudents, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+          SelectedItem="{Binding SelectedItem2, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+          CanUserDeleteRows="True">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Id" Binding="{Binding Id}"/>
+                    <DataGridTextColumn Header="Firstname" Binding="{Binding FirstName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
+                    <DataGridTextColumn Header="Lastname" Binding="{Binding LastName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
+                    <DataGridTextColumn Header="Class" Binding="{Binding Class.Name, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
+                    <DataGridTemplateColumn Header="Parents" Width="100">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <ComboBox BorderBrush="Orange" Grid.Column="0"
+                                  DisplayMemberPath="Parent.FirstName"
+                                SelectedIndex="0"
+                                Width="120"
+                                ItemsSource="{Binding ParentStudents}"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <DataGridTemplateColumn Header="Remove">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Grid Width="100" Height="30">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Button Grid.Column="0"
+                                Margin="2"
+                                Height="25"
+                                Width="25"
+                                Padding="-3"
+                                Background="#97a97c"
+                                BorderBrush="#97a97c"
+                                Command="{Binding Path=DataContext.UpdateStudent, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
+                                Content="{materialDesign:PackIcon Kind=Remove}"
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"/>
+                                </Grid>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+
+
+        </Grid>
+
+
     </Grid>
+    
 </Page>

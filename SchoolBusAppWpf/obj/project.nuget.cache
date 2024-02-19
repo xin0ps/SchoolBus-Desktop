@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GBzN2Qa46upbaWeFycoN23GBGd7kv2hYsVU+0LnKElxCntYj2/Oh4xWdpXOiOhfkKhId0ThhPr45iFIQoHL8oA==",
+  "dgSpecHash": "OAbFNq+Fz8EUIhti9I0cKKGsk7TDvud+jeCRy1+bkT0BpwxoPathrmTmVBCTE5obCjNIuwYfTJvQdN9yXtqMtw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ROG\\Desktop\\SchoolBusApp\\SchoolBusAppWpf\\SchoolBusAppWpf.csproj",
+  "projectFilePath": "C:\\Users\\ROG\\Desktop\\SchoolBusApp - Copy\\SchoolBusAppWpf\\SchoolBusAppWpf.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ROG\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\ROG\\.nuget\\packages\\materialdesigncolors\\2.1.4\\materialdesigncolors.2.1.4.nupkg.sha512",

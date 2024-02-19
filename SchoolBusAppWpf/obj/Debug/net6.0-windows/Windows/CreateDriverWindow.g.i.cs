@@ -120,7 +120,7 @@ namespace SchoolBusAppWpf.Windows {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SchoolBusAppWpf;component/windows/createdriverwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SchoolBusAppWpf;V1.0.0.0;component/windows/createdriverwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Windows\CreateDriverWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

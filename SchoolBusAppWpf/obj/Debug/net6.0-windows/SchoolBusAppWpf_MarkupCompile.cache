@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\ROG\Desktop\SchoolBusApp\SchoolBusAppWpf\obj\Debug\net6.0-windows\
+C:\Users\ROG\Desktop\SchoolBusApp - Copy\SchoolBusAppWpf\obj\Debug\net6.0-windows\
 SchoolBusAppWpf
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\ROG\Desktop\SchoolBusApp\SchoolBusAppWpf\App.xaml
+C:\Users\ROG\Desktop\SchoolBusApp - Copy\SchoolBusAppWpf\App.xaml
 15-1882878856
 31153985557
 34803575502
-221735111177
+221-1196901859
 Views\Pages\CarView.xaml;Views\Pages\ClassView.xaml;Views\Pages\CreateRideView.xaml;Views\Pages\DriverView.xaml;Views\Pages\LoginView.xaml;Views\Pages\NavigationSideView.xaml;Views\Pages\ParentView.xaml;Views\Pages\RideView.xaml;Views\Pages\StudentView.xaml;Windows\CreateCarWindow.xaml;Windows\CreateClassWindow.xaml;Windows\CreateDriverWindow.xaml;Windows\CreateParentWindow.xaml;Windows\CreateStudentWindow.xaml;Windows\MainWindow.xaml;
 
 False

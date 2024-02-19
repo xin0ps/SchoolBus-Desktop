@@ -33,3 +33,21 @@ C:\Users\ROG\Desktop\SchoolBusApp\DataAccess\obj\Debug\net6.0\DataAccess.pdb
 C:\Users\ROG\Desktop\SchoolBusApp\DataAccess\obj\Debug\net6.0\DataAccess.genruntimeconfig.cache
 C:\Users\ROG\Desktop\SchoolBusApp\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
 C:\Users\ROG\Desktop\SchoolBusApp\DataAccess\obj\Debug\net6.0\DataAccess.sourcelink.json
+C:\Users\ROG\Desktop\SchoolBusApp - Copy\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+C:\Users\ROG\Desktop\SchoolBusApp - Copy\DataAccess\bin\Debug\net6.0\DataAccess.runtimeconfig.json
+C:\Users\ROG\Desktop\SchoolBusApp - Copy\DataAccess\bin\Debug\net6.0\DataAccess.dll
+C:\Users\ROG\Desktop\SchoolBusApp - Copy\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+C:\Users\ROG\Desktop\SchoolBusApp - Copy\DataAccess\bin\Debug\net6.0\Model.dll
+C:\Users\ROG\Desktop\SchoolBusApp - Copy\DataAccess\bin\Debug\net6.0\Model.pdb
+C:\Users\ROG\Desktop\SchoolBusApp - Copy\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\ROG\Desktop\SchoolBusApp - Copy\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ROG\Desktop\SchoolBusApp - Copy\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\ROG\Desktop\SchoolBusApp - Copy\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+C:\Users\ROG\Desktop\SchoolBusApp - Copy\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\ROG\Desktop\SchoolBusApp - Copy\DataAccess\obj\Debug\net6.0\DataAccess.sourcelink.json
+C:\Users\ROG\Desktop\SchoolBusApp - Copy\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete
+C:\Users\ROG\Desktop\SchoolBusApp - Copy\DataAccess\obj\Debug\net6.0\DataAccess.dll
+C:\Users\ROG\Desktop\SchoolBusApp - Copy\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
+C:\Users\ROG\Desktop\SchoolBusApp - Copy\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+C:\Users\ROG\Desktop\SchoolBusApp - Copy\DataAccess\obj\Debug\net6.0\DataAccess.genruntimeconfig.cache
+C:\Users\ROG\Desktop\SchoolBusApp - Copy\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll

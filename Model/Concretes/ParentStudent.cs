@@ -12,6 +12,7 @@ namespace Model.Concretes
         public int StudentId { get; set; }
 
         //-----------------------------------------------------------//
-        public virtual Parent? Parent { get; } 
+        public virtual Parent? Parent { get; }
         public virtual Student? Student { get; }
+    }
 }

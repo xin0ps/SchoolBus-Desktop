@@ -88,7 +88,7 @@ namespace SchoolBusAppWpf.Windows {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SchoolBusAppWpf;component/windows/createcarwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SchoolBusAppWpf;V1.0.0.0;component/windows/createcarwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Windows\CreateCarWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

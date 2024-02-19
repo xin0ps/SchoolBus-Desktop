@@ -7101,11 +7101,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ROG\\Desktop\\SchoolBusApp\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\ROG\\Desktop\\SchoolBusApp - Copy\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Users\\ROG\\Desktop\\SchoolBusApp\\DataAccess\\DataAccess.csproj",
+      "projectPath": "C:\\Users\\ROG\\Desktop\\SchoolBusApp - Copy\\DataAccess\\DataAccess.csproj",
       "packagesPath": "C:\\Users\\ROG\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ROG\\Desktop\\SchoolBusApp\\DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\ROG\\Desktop\\SchoolBusApp - Copy\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ROG\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7122,8 +7122,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\ROG\\Desktop\\SchoolBusApp\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\ROG\\Desktop\\SchoolBusApp\\Model\\Model.csproj"
+            "C:\\Users\\ROG\\Desktop\\SchoolBusApp - Copy\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\ROG\\Desktop\\SchoolBusApp - Copy\\Model\\Model.csproj"
             }
           }
         }

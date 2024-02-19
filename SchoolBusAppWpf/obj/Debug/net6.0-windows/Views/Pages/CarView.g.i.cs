@@ -64,7 +64,7 @@ namespace SchoolBusAppWpf.Views.Pages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SchoolBusAppWpf;component/views/pages/carview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SchoolBusAppWpf;V1.0.0.0;component/views/pages/carview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\Pages\CarView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

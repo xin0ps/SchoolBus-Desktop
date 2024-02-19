@@ -112,7 +112,7 @@ namespace SchoolBusAppWpf.Windows {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SchoolBusAppWpf;component/windows/createstudentwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SchoolBusAppWpf;V1.0.0.0;component/windows/createstudentwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Windows\CreateStudentWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
