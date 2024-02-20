@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ROG\\Desktop\\SchoolBusApp - Copy\\Model\\Model.csproj",
+      "projectUniqueName": "C:\\Users\\ROG\\Desktop\\SchoolBusApp\\Model\\Model.csproj",
       "projectName": "Model",
-      "projectPath": "C:\\Users\\ROG\\Desktop\\SchoolBusApp - Copy\\Model\\Model.csproj",
+      "projectPath": "C:\\Users\\ROG\\Desktop\\SchoolBusApp\\Model\\Model.csproj",
       "packagesPath": "C:\\Users\\ROG\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ROG\\Desktop\\SchoolBusApp - Copy\\Model\\obj\\",
+      "outputPath": "C:\\Users\\ROG\\Desktop\\SchoolBusApp\\Model\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ROG\\AppData\\Roaming\\NuGet\\NuGet.Config",

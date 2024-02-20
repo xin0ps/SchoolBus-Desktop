@@ -1,5 +1,6 @@
 ﻿using DataAccess.Repository.Concretes;
 using Model.Concretes;
+using SchoolBusAppWpf.Services;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -28,7 +29,7 @@ namespace SchoolBusAppWpf.Views.Pages
 
 
 
-    public partial class CreateRideView : Page,INotifyPropertyChanged
+    public partial class CreateRideView : Page, INotifyPropertyChanged
     {
 
 
@@ -46,9 +47,9 @@ namespace SchoolBusAppWpf.Views.Pages
 
 
         private Ride _selectedride;
-       
 
-        public Ride  SelectedRide
+
+        public Ride SelectedRide
         {
             get { return _selectedride; }
             set { _selectedride = value; OnPropertyChanged(); }
@@ -69,14 +70,17 @@ namespace SchoolBusAppWpf.Views.Pages
 
 
         private ObservableCollection<Ride> rides;
-        public ObservableCollection<Ride> Rides { get { return rides; } 
-            
-            set 
-            { rides = value; 
+        public ObservableCollection<Ride> Rides
+        {
+            get { return rides; }
+
+            set
+            {
+                rides = value;
                 OnPropertyChanged();
-            
-            } 
-        
+
+            }
+
         }
 
 
@@ -94,10 +98,11 @@ namespace SchoolBusAppWpf.Views.Pages
         public ObservableCollection<Student> AllStudents
         {
             get { return _allstudents; }
-            set { _allstudents = value;  OnPropertyChanged(); }
+            set { _allstudents = value; OnPropertyChanged(); }
         }
 
         public BaseRepo<Student> StudentRepo { get; set; }
+
 
 
 
@@ -113,6 +118,7 @@ namespace SchoolBusAppWpf.Views.Pages
             AllStudents = new ObservableCollection<Student>(StudentRepo.GetAll().Where(s => s.StudentRides.Count() == 0));
             InRideStudents = new ObservableCollection<Student>();
 
+         
 
             InitializeComponent();
             DataContext = this;
@@ -122,7 +128,7 @@ namespace SchoolBusAppWpf.Views.Pages
 
 
         public event PropertyChangedEventHandler? PropertyChanged;
-            public void OnPropertyChanged([CallerMemberName] string? propertyName = null) => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        public void OnPropertyChanged([CallerMemberName] string? propertyName = null) => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 
         private void Selected1(object sender, RoutedEventArgs e)
         {
@@ -136,18 +142,45 @@ namespace SchoolBusAppWpf.Views.Pages
 
         }
 
-        
-     private void AddClick(object sender, RoutedEventArgs e)
+      
+
+        private void AddClick(object sender, RoutedEventArgs e)
         {
-            if (SelectedItem != null)
+            if (SelectedItem != null && SelectedRide != null)
             {
-                AllStudents.Remove(SelectedItem);
+                SelectedItem.StudentRides.Add(new StudentRide { RideId = SelectedRide.Id, StudentId = SelectedItem.Id });
                 InRideStudents.Add(SelectedItem);
+                AllStudents.Remove(SelectedItem);
+
+
+               
+                StudentRepo.Update(SelectedItem);
                 StudentRepo.SaveChanges();
             }
             else
             {
-                MessageBox.Show("NUll");
+                MessageBox.Show("Ride Seçilmedi");
+            }
+        }
+
+        private void RemoveClick(object sender, RoutedEventArgs e)
+        {
+            if (SelectedItem2 != null && SelectedRide != null)
+            {
+                StudentRide studentRideToRemove = SelectedItem2.StudentRides.FirstOrDefault(sr => sr.RideId == SelectedRide.Id);
+                SelectedItem2.StudentRides.Remove(studentRideToRemove);
+                AllStudents.Add(SelectedItem2);
+                InRideStudents.Remove(SelectedItem2);
+               
+
+
+
+                StudentRepo.Update(SelectedItem2);
+                StudentRepo.SaveChanges();
+            }
+            else
+            {
+                MessageBox.Show("Ride Seçilmedi");
             }
         }
     }

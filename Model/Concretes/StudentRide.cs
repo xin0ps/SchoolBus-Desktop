@@ -11,6 +11,10 @@ namespace Model.Concretes
         public int RideId { get; set; }
         public int StudentId { get; set; }
 
+        public StudentRide()
+        {
+                
+        }
         //-----------------------------------------------------------//
 
         public virtual Student Student { get; set; }

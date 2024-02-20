@@ -93,7 +93,6 @@
                                         Padding="-3"
                                         Background="#97a97c"
                                         BorderBrush="#97a97c"
-                                        Command="{Binding Path=DataContext.UpdateStudent, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
                                         Content="{materialDesign:PackIcon Kind=Add}"
                                         Style="{StaticResource MaterialDesignRaisedDarkButton}"/>
                                 </Grid>
@@ -127,7 +126,7 @@
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
 
-                    <DataGridTemplateColumn Header="Remove">
+                    <DataGridTemplateColumn Header="Remove" >
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <Grid Width="100" Height="30">
@@ -135,14 +134,14 @@
                                         <ColumnDefinition/>
                                         <ColumnDefinition/>
                                     </Grid.ColumnDefinitions>
-                                    <Button Grid.Column="0"
+                                    <Button Grid.Column="0" Click="RemoveClick"
                                 Margin="2"
                                 Height="25"
                                 Width="25"
                                 Padding="-3"
                                 Background="#97a97c"
                                 BorderBrush="#97a97c"
-                                Command="{Binding Path=DataContext.UpdateStudent, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
+                               
                                 Content="{materialDesign:PackIcon Kind=Remove}"
                                 Style="{StaticResource MaterialDesignRaisedDarkButton}"/>
                                 </Grid>
